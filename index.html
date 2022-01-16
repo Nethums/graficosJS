@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Miguel Ángel Gallart Aleixandre">
+        <meta name="description" content="Ejercicio sobre librerías gráficas en JavaScript de Desarrollo en Entorno de Cliente (DAW 21-22).">
+        <script src="node_modules/chart.js/dist/chart.js"></script>
+        <script defer src="libs/chartJS.js"></script>  
+
+        <script src="https://www.gstatic.com/charts/loader.js"></script>
+        <script defer src="libs/google.js"></script>
+
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Librerías gráficas en JS</title>
+    </head>
+    <body>
+
+        <h1>Ejercicio sobre librerías en JavaScript</h1>
+
+        <h2>Tabla de contenidos</h2>
+        <ul>
+            <li><a href="#introduccion">Introducción</a></li>
+            <li>
+                <a href="#comunidades">Comunidades de lenguajes de programación</a>
+                <ul>
+                    <li><a href="grafico-lenguajes-programacion">Chart.js: Gráfico de los distintos lenguajes de programación</a></li>
+                    <li><a href="#analisis1">Análisis del gráfico</a></li>
+                </ul>                        
+            </li>
+            <li>
+                <a href="frameworks-javascript">Frameworks de JavaScript</a>
+                <ul>
+                    <li><a href="#angular">Angular</a></li>
+                    <li><a href="#react">React</a></li>
+                    <li><a href="#vue">Vue.js</a></li>
+                    <li><a href="#node">Node.js</a></li>
+                    <li><a href="#grafico-evolucion-frameworks-javascript">Chart.js: Gráfico de la evolución de algunos frameworks de JavaScript</a></li>
+                    <li><a href="#analisis2">Análisis del gráfico</a></li>
+                </ul>           
+            </li>
+            <li>
+                <a href="#javascript-backend"">¿Es JavaScript un buen lenguaje para backend?</a>
+                <ul>
+                    <li><a href="#grafico-lenguajes-backend">Google Chart: Gráfico lenguajes de backend 2019-2020</a></li>
+                    <li><a href="#analisis3">Análisis del gráfico</a></li>
+                </ul>             
+            </li>          
+            <li>
+                <a href="#conclusiones">Conclusiones</a>
+                <ul>
+                    <li><a href="#chartjs">Chart.js</a></li>
+                    <li><a href="#google-charts">Google Charts</a></li>
+                </ul>              
+            </li>
+        </ul>
+
+        <a id="introduccion"></a>
+        <h2>Introducción</h2>
+
+        <p>Para este ejercicio he buscado en internet datos sobre los diferentes tipos de lenguajes de programación ya que me resulta muy interesante ver lo dinámico que es este mundo. Para ello he usado el potente motor de búsquedas de Google, el cual me ha proporcionado enlaces a estudios hechos por otras personas de los que he recogido la información necesaria para realizar los distintos gráficos.</p>
+
+        <a id="comunidades"></a>
+        <h2>Comunidades de lenguajes de programación</h2>
+
+        <p>El sector informático está en constante evolución y por tanto, los lenguajes de programación varian según las necesidades del momento. Por ello, me ha parecido interesante ver qué lenguajes de programación eran los más usados en 2021.</p>
+
+        <p>He encontrado un artículo muy interesante en <a href="https://www.zdnet.com/article/top-programming-languages-most-popular-and-fastest-growing-choices-for-developers/" target="_blank" alt="Link al estudio donde he sacado la información en la web de zdnet.com">zdnet.com</a> en el que desarrollan un estudio completo sobre los diferentes lenguajes de programación.</p>
+
+        <p>Es realmente difícil saber a ciencia cierta cuántos millones de desarrolladores utilizan cada lenguaje, creo que no hay ninguna forma exacta de contabilizar estos datos. Por este motivo, los redactores de <a href="https://www.zdnet.com/" target="_blank" alt="Link a la página web de zdnet.com">www.zdnet.com</a> han investigado las comunidades de estos lengujaes para aportar datos concretos y más fidedignos.</p>
+
+        <p>En el siguiente gráfico se recogen las 15 comunidades más importantes. Para representar estos datos he utilizado la librería <a href="https://www.chartjs.org/" target="_blank" alt="Link a la página de la librería chart.js">chart.js</a> porque es una librería muy completa y de las más usadas hoy en día para añadir gráficos de forma dinámica en las páginas web. En esta ocasión he elegido el formato pie (queso) para visualizar rápidamente todos los lenguajes.</p>
+
+        <p>A continuación dejo el gráfico con los datos obtenidos: </p>
+
+        <a id="grafico-lenguajes-programacion"></a>
+        <canvas id="lenguajes-programacion"  width="700" height="350"></canvas>
+
+        <a id="analisis1"></a>
+        <h3>Análisis del gráfico</h3>
+
+        <p>Como podemos observar en el gráfico, JavaScript es el rey en los lenguajes de programación a finales del año 2021. Python está segundo y las informaciones que he podido leer aseguran que es el lenguaje que más ha crecido en los últimos años, ¿cuánto durará el reinado de JavaScript? Habrá que esperar a los próximos años para ver si mantiene la primera posición o Python se la arrebata.</p>
+
+        <p>Lo que podemos saber con certeza es que JavaScript es un lenguaje de programación que usan millones de desarrolladores a lo largo del mundo y tiene una comunidad enorme detrás. Tanto es así que a lo largo de su historia han surgido librerías o frameworks para darle más soporte y añadir funcionalidades nunca antes vistas, ni soñadas.</p>
+
+        <a id="frameworks-javascript"></a>
+        <h2>Frameworks de JavaScript</h2>
+
+        <p>Dentro de JavaScript hay multitud de frameworks. En este gráfico nos hemos quedado con los 4 más importantes y que más usuarios tienen en 2021, así lo demuestran las búsquedas en Google. Gracias a la herramienta <a href="https://trends.google.com/trends/?geo=ES" target="_blank" alt="Link a Google Trends">Google Trends</a> podemos saber la notoriedad de cualquier búsqueda que realizan los usuarios en un lapso de tiempo que definimos a placer.</p>
+
+        <a id="angular"></a>
+        <h3>Angular</h3>
+
+        <p>Angular es un framework para aplicaciones web desarrollado en TypeScript, de código abierto, mantenido por Google, que se utiliza para crear y mantener aplicaciones web de una sola página. Su objetivo es aumentar las aplicaciones basadas en navegador con capacidad de Modelo Vista Controlador (MVC), en un esfuerzo para hacer que el desarrollo y las pruebas sean más fáciles.</p>
+
+        <p>Empresas importantes que utilizan Angular:</p>
+
+        <ul>
+            <li>Google.</li>
+            <li>Wix.</li>
+        </ul>
+
+        <a id="react"></a>
+        <h3>React</h3>
+        
+        <p>React es una biblioteca Javascript de código abierto diseñada para crear interfaces de usuario con el objetivo de facilitar el desarrollo de aplicaciones en una sola página. Es mantenido por Facebook y la comunidad de software libre. En el proyecto hay más de mil desarrolladores libres.</p>
+
+        <p>Empresas importantes que utilizan React:</p>
+        
+        <ul>
+            <li>Facebook.</li>
+            <li>Instagram.</li>
+            <li>Tesla.</li>
+            <li>Discord.</li>
+        </ul>
+
+        <a id="vue"></a>
+        <h3>Vue.js</h3>
+        
+        <p>Vue.js  es un framework de JavaScript de código abierto para la construcción de interfaces de usuario y aplicaciones de una sola página. Fue creado por Evan You, y es mantenido por él y por el resto de los miembros activos del equipo central que provienen de diversas empresas como Netlify y Netguru.</p>
+
+        <p>Empresas importantes que utilizan Vue.js:</p>
+
+        <ul>
+            <li>Nintendo.</li>
+            <li>Adobe.</li>
+            <li>Gitlab.</li>
+        </ul>
+
+        <a id="node"></a>
+        <h3>Node.js</h3>
+        
+        <p>Node.js es un entorno en tiempo de ejecución multiplataforma, de código abierto, para la capa del servidor (pero no limitándose a ello) basado en el lenguaje de programación JavaScript, asíncrono, con E/S de datos en una arquitectura orientada a eventos y basado en el motor V8 de Google. Fue creado con el enfoque de ser útil en la creación de programas de red altamente escalables, como por ejemplo, servidores web. Fue creado por Ryan Dahl en 2009 y su evolución está apadrinada por la empresa Joyent, que además tiene contratado a Dahl en plantilla.</p>        
+
+        <p>Empresas importantes que utilizan Node.js:</p>
+        
+        <ul>
+            <li>LinkedIn.</li>
+            <li>Netflix.</li>
+            <li>Paypal.</li>
+        </ul>
+
+        <p>El siguiente gráfico lo he desarrollado utilizando la librería <a href="https://www.chartjs.org/" target="_blank" alt="Link a la página de la librería chart.js">chart.js</a> con la variante line (líneas) donde se puede apreciar la evolución de los distintos frameworks.</p>
+
+        <a id="grafico-evolucion-frameworks-javascript"></a>
+        <canvas id="frameworks"  width="700" height="350"></canvas>
+
+        <a id="analisis2"></a>
+        <h3>Análisis del gráfico</h3>
+
+        <p>Empecemos aclarando qué es la notoriedad. Los números reflejan el interés de búsqueda en relación con el valor máximo de un gráfico en una región y un periodo determinados. Un valor de 100 indica la popularidad máxima de un término, mientras que 50 y 0 indican que un término es la mitad de popular en relación con el valor máximo o que no había suficientes datos del término, respectivamente.</p>
+
+        <p>Una vez que sabemos interpretar los datos de la tabla, podemos ver como React es el framework que más ha crecido desde su creación. Durante mucho tiempo Angular fue el más popular de los frameworks de JavaScript pero en los últimos años React se ha convertido en el más usado. </p>
+        
+        <p>¿Esto quiere decir que es el mejor framework? No. Todos los frameworks tienen su sentido y utilidad. Dependerá de qué aplicación o web queramos realizar para saber cual de ellos es el más apropiado y al que más partido le sacaremos.</p>
+
+        <a id="javascript-backend"></a>
+        <h2>¿Es JavaScript un buen lenguaje para backend?</h2>
+
+        <p>JavaScript es un lenguaje que se puede utilizar tanto en frontend como backend. Aunque no sea la opción más utlizada a nivel global, más de un 8% de desarrolladores piensan que los frameworks de JavaScript para backend son la mejor solución para sus aplicaciones o webs.</p>
+        
+        <p>Me ha parecido interesante saber si JavaScript es un lenguaje utilizado sólo para la parte más visual o también se utiliza para la parte que el usuario no ve, el backend. No ha sido fácil acceder a estos datos pero después de una intensiva búsqueda he dado con 2 páginas que muestran datos. </p>
+            
+        <p>Los datos de 2019 los he encontrado en <a href="https://mxx.news/backend-language-to-learn-in-2020-comparing-community-job-market-cloud-support-and-performance/" target="_blank" alt="Enlace al estudio de mxx.news sobre lenguajes de backend en 2019">mxx.news</a> mientras que los datos de 2020 los he podido sacar de <a href="https://darly.solutions/the-most-popular-programming-languages-in-2021/" target="_blank" alt="Enlace al estudio de mxx.news sobre lenguajes de backend en 2019">darly.solutions</a>. Gracias a ambos estudios podemos ver la evolución de los distintos lenguajes usados para backend.</p>
+
+        <p>Para este gráfico he usado la librería de Google y así probar otra librería diferente a Chart.js.</p>
+
+        <a id="grafico-lenguajes-backend"></a>
+        <div id="chart_div"></div>
+
+        <a id="analisis3"></a>
+        <h3>Análisis del gráfico</h3>
+
+        <p></p>
+
+        <a id="conclusiones"></a>
+        <h2>Conclusiones sobre las librerías</h2>
+
+        <p></p>
+
+        <a id="chartjs"></a>
+        <h3>Chart.js</h3>
+
+        <p>He aprendido a usar node.js y npm</p>
+
+        <a id="google-charts"></a>
+        <h3>Google Charts</h3>
+
+        <p>Mencionar que sólo se puede utilizar online</p>
+
+
+    </body>
+</html>
