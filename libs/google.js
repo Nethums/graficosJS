@@ -12,12 +12,13 @@ function drawTitleSubtitle() {
     ['C/C++', 5.8, 6.44]        
     ]);
 
-    var materialOptions = {
-    chart: {
-        title: ''
-    },
-    bars: 'vertical'
+    var options = {
+        chart: {
+            title: '',
+            backgroundColor: 'transparent'
+        },           
+        bars: 'vertical'
     };
-    var materialChart = new google.charts.Bar(document.getElementById('chart_div'));
-    materialChart.draw(data, materialOptions);
+    var materialChart = new google.charts.Bar(document.getElementById('lenguajs-backend'));
+    materialChart.draw(data, options);
 }

@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Miguel Ángel Gallart Aleixandre">
         <meta name="description" content="Ejercicio sobre librerías gráficas en JavaScript de Desarrollo en Entorno de Cliente (DAW 21-22).">
+        <script defer src="js/main.js"></script>
         <script src="node_modules/chart.js/dist/chart.js"></script>
         <script defer src="libs/chartJS.js"></script>  
 
@@ -19,17 +20,18 @@
 
         <h1>Ejercicio sobre librerías en JavaScript</h1>
 
-        <h2>Tabla de contenidos</h2>
-        <ul>
-            <li><a href="#introduccion">Introducción</a></li>
-            <li>
+        <h2>Tabla de contenidos <button id="toggle">Pincha para desplegar</button></h2>
+        <ul class="tabla-contenidos">
+            <li class="principal"><a href="#librerias">Librerías utilizadas</a></li>
+            <li class="principal"><a href="#introduccion">Introducción</a></li>
+            <li class="principal">
                 <a href="#comunidades">Comunidades de lenguajes de programación</a>
                 <ul>
                     <li><a href="grafico-lenguajes-programacion">Chart.js: Gráfico de los distintos lenguajes de programación</a></li>
                     <li><a href="#analisis1">Análisis del gráfico</a></li>
                 </ul>                        
             </li>
-            <li>
+            <li class="principal">
                 <a href="frameworks-javascript">Frameworks de JavaScript</a>
                 <ul>
                     <li><a href="#angular">Angular</a></li>
@@ -40,20 +42,31 @@
                     <li><a href="#analisis2">Análisis del gráfico</a></li>
                 </ul>           
             </li>
-            <li>
+            <li class="principal">
                 <a href="#javascript-backend"">¿Es JavaScript un buen lenguaje para backend?</a>
                 <ul>
                     <li><a href="#grafico-lenguajes-backend">Google Chart: Gráfico lenguajes de backend 2019-2020</a></li>
                     <li><a href="#analisis3">Análisis del gráfico</a></li>
                 </ul>             
             </li>          
-            <li>
+            <li class="principal">
                 <a href="#conclusiones">Conclusiones</a>
                 <ul>
                     <li><a href="#chartjs">Chart.js</a></li>
                     <li><a href="#google-charts">Google Charts</a></li>
                 </ul>              
             </li>
+        </ul>
+
+        <a id="librerias"></a>
+        <h2>Librerías utilizadas en el ejercicio</h2>
+
+        <p>Me he decantado por las lirerías Chart.js y las de Google Chart. Los motivos por los cuales he elegido estas 2 son principalmente 3:</p>
+
+        <ul>
+            <li>Gran uso por parte de los usuarios en todo el mundo.</li>
+            <li>Han sido las 2 que más me han llamado la atención y que he conseguido hacer funcionar más rápido.</li>
+            <li>Existe una gran documentación por internet.</li>
         </ul>
 
         <a id="introduccion"></a>
@@ -167,28 +180,35 @@
         <p>Para este gráfico he usado la librería de Google y así probar otra librería diferente a Chart.js.</p>
 
         <a id="grafico-lenguajes-backend"></a>
-        <div id="chart_div"></div>
+        <div id="lenguajs-backend"></div>
 
         <a id="analisis3"></a>
         <h3>Análisis del gráfico</h3>
 
-        <p></p>
+        <p>Por los datos obtenidos podemos asegurar que Python es el rey de los lenguajes de programación sin ningún tipo de duda aunque por detrás le siguen varios lenguajes los cuales se van asentando cada vez más.</p>
+
+        <p>También observamos como JavaSript se ha asentado como lenguaje de backend, incluso llegando a superar al propio PHP que hasta hace no muchos años era el lenguaje de servidor y backend por excelencia.</p>
 
         <a id="conclusiones"></a>
         <h2>Conclusiones sobre las librerías</h2>
 
-        <p></p>
+        <p>He elegido estas dos librerías por las razones que expuse en el primer punto de este ejercicio: chart.js ofrece una personalización muy amplia además de ser una de las más usadas para realizar gráficos; Google Charts la elegí porque Google es la empresa más importante de internet y por tanto es casi obligatorio el aprender todos los recursos que ofrece.</p>
 
         <a id="chartjs"></a>
         <h3>Chart.js</h3>
 
-        <p>He aprendido a usar node.js y npm</p>
+        <p>Me ha parecido una gran librería con un enorme potencial. Después de ver muchos vídeos en Youtube he observado que se pueden hacer auténticas maravillas con esta librería una vez que se tienen los conocimientos apropiados.</p>
+
+        <p>En la página oficial aconsejaban instalar la librería y no sabía qué era eso, por lo que investigué y aprendí a usar Node.js y el terminal para instalar dependencias, en este caso la librería Chart.js pero seguro que me servirá de mucho en el futuro.</p>
 
         <a id="google-charts"></a>
         <h3>Google Charts</h3>
 
-        <p>Mencionar que sólo se puede utilizar online</p>
+        <p>Elegí esta librería porque Google maneja el mundo en internet y qué mejor que saber utilizar su librería para gráficos en JavaScript. Me ha resultado más fácil de implmentar que Chart.js, seguramente sea porque sólo he tocado la superficie. </p>
 
+        <p>Al igual que hice con Chart.js, intenté instalar la librería mediante npm pero no pude ya que va en contra de los TOS de Google, por lo que hice lo que recomiendan: enlazar la página donde se encuentra directamente.</p>
+
+        <button id="botonArriba">Volver arriba</button>
 
     </body>
 </html>

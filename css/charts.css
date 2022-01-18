@@ -1,0 +1,8 @@
+#lenguajes-programacion, #frameworks, #lenguajs-backend {
+    margin: 30px 0;
+}
+
+
+#lenguajs-backend rect:first-child {
+    fill: transparent;
+}
