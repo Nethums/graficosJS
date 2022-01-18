@@ -14,8 +14,7 @@ function drawTitleSubtitle() {
 
     var options = {
         chart: {
-            title: '',
-            backgroundColor: 'transparent'
+            title: ''
         },           
         bars: 'vertical'
     };

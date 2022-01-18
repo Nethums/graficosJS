@@ -33,10 +33,6 @@ ul.tabla-contenidos a, ul.tabla-contenidos a:visited, ul.tabla-contenidos a:focu
     font-weight: 600;
 }
 
-ul.tabla-contenidos a:hover {
-    border-bottom: 2px solid darkcyan;
-}
-
 ul {
     padding-left: 15px;    
 }

@@ -28,7 +28,7 @@
                 <a href="#comunidades">Comunidades de lenguajes de programación</a>
                 <ul>
                     <li><a href="grafico-lenguajes-programacion">Chart.js: Gráfico de los distintos lenguajes de programación</a></li>
-                    <li><a href="#analisis1">Análisis del gráfico</a></li>
+                    <li><a href="#chartjs1">Funcionamiento de la librería</a></li>
                 </ul>                        
             </li>
             <li class="principal">
@@ -39,14 +39,14 @@
                     <li><a href="#vue">Vue.js</a></li>
                     <li><a href="#node">Node.js</a></li>
                     <li><a href="#grafico-evolucion-frameworks-javascript">Chart.js: Gráfico de la evolución de algunos frameworks de JavaScript</a></li>
-                    <li><a href="#analisis2">Análisis del gráfico</a></li>
+                    <li><a href="#chartjs2">Funcionamiento de la librería</a></li>
                 </ul>           
             </li>
             <li class="principal">
                 <a href="#javascript-backend"">¿Es JavaScript un buen lenguaje para backend?</a>
                 <ul>
                     <li><a href="#grafico-lenguajes-backend">Google Chart: Gráfico lenguajes de backend 2019-2020</a></li>
-                    <li><a href="#analisis3">Análisis del gráfico</a></li>
+                    <li><a href="#google-chart">Funcionamiento de la librería</a></li>
                 </ul>             
             </li>          
             <li class="principal">
@@ -90,12 +90,12 @@
         <a id="grafico-lenguajes-programacion"></a>
         <canvas id="lenguajes-programacion"  width="700" height="350"></canvas>
 
-        <a id="analisis1"></a>
-        <h3>Análisis del gráfico</h3>
+        <a id="chartjs1"></a>
+        <h3>Funcionamiento de la librería</h3>
 
-        <p>Como podemos observar en el gráfico, JavaScript es el rey en los lenguajes de programación a finales del año 2021. Python está segundo y las informaciones que he podido leer aseguran que es el lenguaje que más ha crecido en los últimos años, ¿cuánto durará el reinado de JavaScript? Habrá que esperar a los próximos años para ver si mantiene la primera posición o Python se la arrebata.</p>
+        <p>Para utilizar la librería chart.js primero usé el link al cdn porque no sabía cómo funcionaba la instalación por npm. Después de leer la documentación la instalé de esta forma ya que es lo que aconsejan desde la página oficial.</p>
 
-        <p>Lo que podemos saber con certeza es que JavaScript es un lenguaje de programación que usan millones de desarrolladores a lo largo del mundo y tiene una comunidad enorme detrás. Tanto es así que a lo largo de su historia han surgido librerías o frameworks para darle más soporte y añadir funcionalidades nunca antes vistas, ni soñadas.</p>
+        <p>Para este gráfico he elegido la representación como pie o quesito ya que me resultaba muy cómodo ver qué porcentaje ocupaba cada lenguaje de programación. Las opciones hay que introducirlas por separado. Primero las labels y luego las cifras en data. Para elegir qué color representa cada opción se utiliza la opcion backgroundColor.</p>
 
         <a id="frameworks-javascript"></a>
         <h2>Frameworks de JavaScript</h2>
@@ -159,14 +159,12 @@
         <a id="grafico-evolucion-frameworks-javascript"></a>
         <canvas id="frameworks"  width="700" height="350"></canvas>
 
-        <a id="analisis2"></a>
-        <h3>Análisis del gráfico</h3>
+        <a id="chartjs2"></a>
+        <h3>Funcionamiento de la librería</h3>
 
-        <p>Empecemos aclarando qué es la notoriedad. Los números reflejan el interés de búsqueda en relación con el valor máximo de un gráfico en una región y un periodo determinados. Un valor de 100 indica la popularidad máxima de un término, mientras que 50 y 0 indican que un término es la mitad de popular en relación con el valor máximo o que no había suficientes datos del término, respectivamente.</p>
+        <p>Para este gráfico he vuelto a utilizar la librería chart.js pero cambiando el tipo a line. Al cambiar el tipo también cambia la manera de introducir los datos. A diferencia del gráfico con formato pie, aquí hay que introducir los datos por datasets.</p>
 
-        <p>Una vez que sabemos interpretar los datos de la tabla, podemos ver como React es el framework que más ha crecido desde su creación. Durante mucho tiempo Angular fue el más popular de los frameworks de JavaScript pero en los últimos años React se ha convertido en el más usado. </p>
-        
-        <p>¿Esto quiere decir que es el mejor framework? No. Todos los frameworks tienen su sentido y utilidad. Dependerá de qué aplicación o web queramos realizar para saber cual de ellos es el más apropiado y al que más partido le sacaremos.</p>
+        <p>Cada dataset incluye la etiqueta, el dato, color y todas las opciones requeridas. Personalmente me parece mucho más intuitivo que la opción anterior.</p>
 
         <a id="javascript-backend"></a>
         <h2>¿Es JavaScript un buen lenguaje para backend?</h2>
@@ -182,12 +180,14 @@
         <a id="grafico-lenguajes-backend"></a>
         <div id="lenguajs-backend"></div>
 
-        <a id="analisis3"></a>
-        <h3>Análisis del gráfico</h3>
+        <a id="google-chart"></a>
+        <h3>Funcionamiento de la librería</h3>
 
-        <p>Por los datos obtenidos podemos asegurar que Python es el rey de los lenguajes de programación sin ningún tipo de duda aunque por detrás le siguen varios lenguajes los cuales se van asentando cada vez más.</p>
+        <p>Como siempre, Google tiene una documentación muy extensa por lo que es fácil encontrar cualquier funcionalidad rápidamente. Al contrario que la libería chart.js, google-chart hay que enlazarla directamente a su página web por motivos legales. Esto puede ser un problema si no tenemos conexión a internet.</p>
 
-        <p>También observamos como JavaSript se ha asentado como lenguaje de backend, incluso llegando a superar al propio PHP que hasta hace no muchos años era el lenguaje de servidor y backend por excelencia.</p>
+        <p>Una vez enlazada la librería tan sólo hay que crear un div con una id para tratar la gráfica. Después he copiado el texto de la documentación y modificado lo que necesitaba para adaptarlo. He elegido un gráfico de barras verticales y 2 años diferentes para cada framework, así puedo ver la evolución de cada uno de ellos.</p>
+
+        <p>Está claro que Google Chart es una herramienta muy potente ya que viene de Google y por tanto está bien saber utilizarla y conocer cómo funciona ya que seguramente tenga que usarla en un futuro.</p>
 
         <a id="conclusiones"></a>
         <h2>Conclusiones sobre las librerías</h2>
